@@ -1,0 +1,19 @@
+spring:
+  # spring boot 2. 버전에서 deprecated 된 코드 ** 개****
+  profiles:
+    active: local # 기본 환경 선택
+
+# local 환경
+---
+spring:
+  profiles: local
+  datasource:
+    data: classpath:data-h2.sql
+  jpa:
+    show-sql: true
+    hibernate:
+      # 운영환경에서 배포시 모든 테이블이 drop → create 가 된다.
+      ddl-auto: create-drop
+  h2:
+    console:
+      enabled: true

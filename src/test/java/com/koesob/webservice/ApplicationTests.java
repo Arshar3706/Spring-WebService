@@ -1,10 +1,10 @@
 package com.koesob.webservice;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringWebserviceApplicationTests {
+class ApplicationTests {
 
     @Test
     void contextLoads() {
